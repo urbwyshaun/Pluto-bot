@@ -76,3 +76,7 @@ st.plotly_chart(fig, use_container_width=True)
 if st.button("🔄 Refresh Now"):
     st.cache_data.clear()
     st.rerun()
+st.divider()
+if st.button("📲 Test WhatsApp Now"):
+    send_wa(f"✅ PLUTO FAST TEST OK - Gold ${price:.2f} Bot is LIVE!")
+    st.success("WhatsApp sent! Check your phone")
