@@ -156,8 +156,8 @@ if 'trades' not in st.session_state: st.session_state.trades=[]
 if 'active_trade' not in st.session_state: st.session_state.active_trade=None
 
 st.sidebar.header("💰 Account")
-balance = st.sidebar.number_input("Balance $", value=50.0)
-risk_pct = st.sidebar.slider("Risk %", 1.0, 5.0, 2.0)
+balance = st.sidebar.number_input("Balance $", value=50.0, key="bal_final_v2")
+risk_pct = st.sidebar.slider("Risk %", 1.0, 5.0, 2.0, key="risk_final_v2")
 
 sast = pytz.timezone('Africa/Johannesburg')
 now_sast = datetime.now(sast)
